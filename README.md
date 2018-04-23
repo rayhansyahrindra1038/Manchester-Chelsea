@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-  int main () {
-  int p_kata,cek,kata_ketemu;
+int main(){
+	int p_kata,cek,kata_ketemu;
 	kata_ketemu=0;
 	char masukkan[100];
 	char puzzle[15][15]={ {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
@@ -20,5 +22,18 @@ using namespace std;
 						{'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
 						{'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}
 						};
+		
+	for(int i=0;i<15;i++){
+		for (int j=0;j<15;j++){
+			cout<<puzzle[i][j]<<" ";
+		}
+		cout<<endl;
+	}		
+	
+int p;
+cin>>p;
+for (int r4=0; r4<p; r4++){
+	cin>>masukkan;
+	p_kata=strlen(masukkan);				
   
   
