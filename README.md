@@ -103,5 +103,52 @@ for (int i=0;i<15;i++){
 					kata_ketemu+=0;
 				}
 				cek=0;
-				
+					///DIAGONAL KE KIRI ATAS
+				for (int k=0;k<p_kata;k++){
+					if (masukkan[k]==puzzle[i-k][j-k]){
+						cek=k;
+					}
+					else{
+						break;
+					}
+				}
+				if (cek==p_kata-1){
+					kata_ketemu+=1;
+				}
+				else{
+					kata_ketemu+=0;
+				}
+				cek=0;
+				///DIAGONAL KE KANAN ATAS
+				for (int k=0;k<p_kata;k++){
+					if (masukkan[k]==puzzle[i-k][j+k]){
+						cek=k;
+					}
+					else{
+						break;
+					}
+				}
+				if (cek==p_kata-1){
+					kata_ketemu+=1;
+				}
+				else{
+					kata_ketemu+=0;
+				}
+				cek=0;
+				///DIAGONAL KE KIRI BAWAH
+				for (int k=0;k<p_kata;k++){
+					if (masukkan[k]==puzzle[i+k][j-k]){
+						cek=k;
+					}
+					else{
+						break;
+					}
+				}
+				if (cek==p_kata-1){
+					kata_ketemu+=1;
+				}
+				else{
+					kata_ketemu+=0;
+				}
+				cek=0;
   
