@@ -34,6 +34,6 @@ int p;
 cin>>p;
 for (int r4=0; r4<p; r4++){
 	cin>>masukkan;
-	p_kata=strlen(masukkan);				
-  
+	p_kata=strlen(masukkan);					
+}
   
