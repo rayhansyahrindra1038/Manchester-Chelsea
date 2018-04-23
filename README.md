@@ -36,4 +36,31 @@ for (int r4=0; r4<p; r4++){
 	cin>>masukkan;
 	p_kata=strlen(masukkan);					
 }
+for (int i=0;i<15;i++){
+		for (int j=0;j<15;j++){
+			if (masukkan[0]==puzzle[i][j]){
+				///HORIZONTAL KE KANAN
+				for (int k=0;k<p_kata;k++){
+					if (masukkan[k]==puzzle[i][j+k]){
+						cek=k;
+					}
+					else{
+						break;
+					}
+				}
+				if (cek==p_kata-1){
+					kata_ketemu+=1;
+				}
+				else{
+					kata_ketemu+=0;
+				}
+				cek=0;
+				///HORIZONTAL KE KIRI
+				for (int k=0;k<p_kata;k++){
+					if (masukkan[k]==puzzle[i][j-k]){
+						cek=k;
+					}
+					else{
+						break;
+					}
   
