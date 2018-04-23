@@ -63,4 +63,12 @@ for (int i=0;i<15;i++){
 					else{
 						break;
 					}
+					}
+				if (cek==p_kata-1){
+					kata_ketemu+=1;
+				}
+				else{
+					kata_ketemu+=0;
+				}
+				cek=0;
   
